@@ -281,7 +281,7 @@ class Sniper extends Tower {
 
 class ChainGunner extends Tower {
   constructor(x, y) {
-    super(false, {left: [{cost:500, name: 'Load Faster', effect: function(tower) {tower.attackTime = 300;}}, {cost: 1200, name: 'LOAD EVEN FASTER', effect: function(tower) {tower.attackTime = 150;}], right: [{cost: 6666, name: '10 cm bullets', effect: function(tower) {tower.damage = 5;}}]}, x, y, 1000, 0.02, 'green', .15, 500, 1, null, defaultTarget, {name: 'An Ability', cost: 0, effect: null}, socket.id);
+    super(false, {left: [{cost:500, name: 'Load Faster', effect: function(tower) {tower.attackTime = 300;}}, {cost: 1200, name: 'LOAD EVEN FASTER', effect: function(tower) {tower.attackTime = 150;}}], right: [{cost: 6666, name: '10 cm bullets', effect: function(tower) {tower.damage = 5;}}]}, x, y, 1000, 0.02, 'green', .15, 500, 1, 'BasicDart', defaultTarget, {name: 'An Ability', cost: 0, effect: null}, socket.id);
   }
 }
 
